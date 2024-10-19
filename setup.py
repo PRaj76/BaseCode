@@ -1,4 +1,4 @@
-import setuptools
+import setuptools # type: ignore
 
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
@@ -6,8 +6,8 @@ with open("README.md", "r", encoding="utf-8") as f:
 __version__ = "0.0.0"
 
 REPO_NAME = "Basecode"
-AUTHOR_USER_NAME = "c17hawke"
-SRC_REPO = "Basecode"
+AUTHOR_USER_NAME = "PRaj76"
+SRC_REPO = "deepClassifier"
 AUTHOR_EMAIL = "panakjraj7651@gmail.com"
 
 setuptools.setup(

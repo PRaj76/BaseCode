@@ -14,4 +14,4 @@
 10. Update the dvc.yaml
 11. run "dvc repro" for running all the stages in pipeline
 
-![]("![alt text](image-1.png)")
+![]("![alt text](image.png)")

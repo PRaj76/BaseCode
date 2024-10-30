@@ -4,7 +4,7 @@ from zipfile import ZipFile
 from deepClassifier.entity import DataIngestionConfig
 from deepClassifier import logger
 from deepClassifier.utils import get_size
-from  tqdm import tqdm
+from tqdm import tqdm
 from pathlib import Path
 
 
@@ -22,7 +22,7 @@ class DataIngestion:
             )
             logger.info(f"{filename} download! with following info: \n{headers}")
         else:
-            logger.info(f"File already exists of size: {get_size(Path(self.config.local_data_file))}")        
+            logger.info(f"File already exists of size: {get_size(Path(self.config.local_data_file))}")       
 
     def _get_updated_list_of_files(self, list_of_files):
         return [f for f in list_of_files if f.endswith(".jpg") and ("Cat" in f or "Dog" in f)]

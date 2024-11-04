@@ -2,9 +2,9 @@ name: CV application
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 permissions:
   contents: read
@@ -30,4 +30,4 @@ jobs:
         pip install flake8 pytest tox tox-gh-actions
         pip install -r requirements.txt
     - name: Test with tox
-      run: tox 
+      run: tox
